@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
+
+.btn {
+  @apply py-2 px-4 rounded;
+}
+
+.active{
+  @apply bg-black p-2 text-white;
+}
+
+.btn-red {
+  @apply bg-red-500 text-white;
+}
+
+.btn-red:hover {
+  @apply bg-red-900;
+}
+
+.btn-black {
+  @apply bg-gray-900 text-white;
+}
+
+.btn-black:hover {
+  @apply bg-gray-600;
+}
+
+.card {
+  @apply overflow-hidden shadow-xl;
+}
+
+.card .imagen{
+  min-width: 320px;
+  min-height: 320px;
+  position: relative;
+}
+
+.formulario{
+  @apply w-full sm:w-6/12 md:w-6/12 lg:w-4/12 rounded bg-gray-50 shadow-xl p-4 mx-8;
+}
+
+.logo{
+  @apply mx-auto w-1/2 sm:w-1/2;
+}
+
+.content-input{
+  @apply flex flex-col sm:flex-row mt-6 items-center;
+}
+
+.inputPoke{
+  @apply flex-1 p-2 mr-0 sm:mr-4 mb-4 sm:mb-0 w-full;
+}
+
+/*apply para modal*/
+.modal_bg{
+  @apply bg-black bg-opacity-50 fixed inset-0 items-center justify-center;
+}
+
+.modal_container{
+  @apply bg-white max-w-3xl p-4 rounded shadow-xl text-gray-800;
+}
+
+.modalHeader{
+  @apply flex justify-between items-center;
+}
+
+.modalTitle{
+  @apply text-lg font-bold;
+}
+
+.modalClose{
+  @apply w-6 h-6 cursor-pointer p-1 hover:bg-gray-400 rounded-full;
+}
+
+.modalBody{
+  @apply mt-2 text-sm flex;
+}
+
+.modalFooter{
+  @apply mt-6 flex justify-center space-x-3;
+}
+
+.description>ul>li{
+  @apply rounded p-2 border-b bg-gray-200 font-bold text-red-500;
+}
+
+.description>ul>li>span{
+  @apply font-bold text-black mr-2;
+}
